@@ -42,15 +42,15 @@
 
 
 /* Wallpaper
-   FDT: one dim layer over the gif. The original got ~80% dim from
-   several stacked 30% layers, so it's set here directly.
-   Lower the last number for a brighter gif (e.g. 0.6), raise it for darker. */
+   FDT: the gif tiles at its original size (like the original theme),
+   with one dark layer on top. The original got ~80% dark from several
+   stacked 30% layers, so it's set here directly. */
 :root {
-  --fdt-wallpaper-dim: rgba(3, 3, 22, 0.8);
+    --fdt-wallpaper-dim: rgba(3, 3, 22, 0.8);
 }
 
 body {
-  background:
-          linear-gradient(var(--fdt-wallpaper-dim), var(--fdt-wallpaper-dim)),
-          url("https://i.pinimg.com/originals/58/23/80/5823809c12e8d3e05de3f4bffba5e848.gif") center / cover fixed !important;
+    background:
+            linear-gradient(var(--fdt-wallpaper-dim), var(--fdt-wallpaper-dim)),
+            url("https://i.pinimg.com/originals/58/23/80/5823809c12e8d3e05de3f4bffba5e848.gif") !important;
 }
