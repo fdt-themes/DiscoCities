@@ -42,3 +42,23 @@
   --accent-titles: gold;
   --borders: rgba(124, 124, 124, 1) 2px dotted;
 }
+
+/* FDT fix: map to current discord background variables */
+.theme-dark.theme-dark,
+.theme-midnight.theme-midnight,
+.theme-darker.theme-darker {
+  --app-frame-background: transparent;
+  --chat-background: transparent;
+  --channel-background-default: transparent;
+  --background-base-lowest: var(--LilWatBackground2);
+  --background-base-lower: var(--LilWatBackground2);
+  --background-base-low: var(--LilWatBackground);
+  --background-surface-high: var(--LilWatBackground);
+  --background-surface-higher: rgba(35, 35, 35, 0.771);
+  --background-surface-highest: rgba(35, 35, 35, 0.771);
+  --bg-surface-raised: rgba(35, 35, 35, 0.771);
+  --chat-background-default: var(--LilWatBackground);
+  --panel-bg: var(--LilWatSB);
+  --home-background: var(--LilWatBackground);
+  --channeltextarea-background: var(--LilWatTextBackground);
+}
