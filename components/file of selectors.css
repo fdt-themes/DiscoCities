@@ -460,3 +460,17 @@ path:hover {
 .chatContent_z_gUBg {
   background: transparent !important;
 }
+
+/* Bubble look (based on the DiscoCities additions in Vozer's Chat Bubbles fork) */
+.theme-dark #app-mount .message_SY_P2T {
+  margin-left: 66px !important;
+  border-radius: 15px;
+}
+
+.messageListItem_SY_P2T {
+  padding: 3px;
+}
+
+.scroller_8AE1Qq {
+  backdrop-filter: blur(5px);
+}
