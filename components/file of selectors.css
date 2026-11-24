@@ -451,3 +451,12 @@ path:hover {
   border-radius: 5px;
   box-shadow: 1px 3px 5px 1px green;
 }
+
+/* FDT fix: wrappers stack the 30% tint and hide the wallpaper */
+#app-mount,
+.bg_Fd0FEH,
+.app_QbT-Jy,
+.chat_z_gUBg,
+.chatContent_z_gUBg {
+  background: transparent !important;
+}
