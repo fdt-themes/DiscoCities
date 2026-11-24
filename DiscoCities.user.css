@@ -26,15 +26,22 @@
 > This is the core of the entire theme
 > It is essential that you do not touch any of these urls, unless you know what you are doing.
 */
-@import url('https://slippinggitty-s-discord-things.github.io/Chat-Bubbles/ChatBubbles.theme.css');
-@import url('https://slippinggittys-discord-themes.github.io/DiscoCities/components/file%20of%20fonts.css');
-@import url('https://slippinggittys-discord-themes.github.io/DiscoCities/components/file%20of%20icons.css');
-@import url('https://slippinggittys-discord-themes.github.io/DiscoCities/components/file%20of%20selectors.css'); 
-@import url('https://slippinggittys-discord-themes.github.io/DiscoCities/components/file%20of%20variables.css');
+  @import url('https://fdt-themes.github.io/Chat-Bubbles/ChatBubbles.theme.css');
+  @import url('https://fdt-themes.github.io/DiscoCities/components/file%20of%20fonts.css');
+  @import url('https://fdt-themes.github.io/DiscoCities/components/file%20of%20icons.css');
+  @import url('https://fdt-themes.github.io/DiscoCities/components/file%20of%20selectors.css');
+  @import url('https://fdt-themes.github.io/DiscoCities/components/file%20of%20variables.css');
 
-/* Wallpaper */
+
+/* Wallpaper (FDT: one dim layer over the gif, raise/lower the last number for darker/brighter) */
+:root {
+  --fdt-wallpaper-dim: rgba(3, 3, 22, 0.8);
+}
+
 body {
-  background-image: url("https://i.pinimg.com/originals/58/23/80/5823809c12e8d3e05de3f4bffba5e848.gif");
+  background:
+          linear-gradient(var(--fdt-wallpaper-dim), var(--fdt-wallpaper-dim)),
+          url("https://i.pinimg.com/originals/58/23/80/5823809c12e8d3e05de3f4bffba5e848.gif") center / cover fixed !important;
 }
     
 }
